@@ -39,7 +39,7 @@ jobs:
     env:
       CCACHE_DIR: ~/.cache/ccache
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         include:
         - os: ubuntu-22.04
@@ -132,7 +132,7 @@ jobs:
     env:
       CCACHE_DIR: ~/.cache/ccache
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         include:
           - os: ubuntu-24.04
